@@ -1,0 +1,9 @@
+@import './global.styles.css';
+
+
+/* for screens from 476 to 991 above */
+@media only screen and (min-width: 601px) and (max-width: 991px)  {
+ h1 {
+    font-size: 7vw
+  } 
+}

@@ -6,7 +6,22 @@
 /* variables for theme */
   :root {
     /* color theme */
-    --main-color: brown;
+    --tea-rose-red: #FEC4C3ff;
+    --lapis-lazuli: #14578Cff;
+    /* headers */
+    --header-color: hsl(211, 73%, 82%);
+    
+    --berkeley-blue: #05315Fff;
+    /* background */
+    --oxford-blue: #001F4Bff;
+
+    /* radial gradient */
+    --radial: radial-gradient(circle, #14578Cff 0%,  #05315Fff 35%, #001F4Bff 100%);
+
+
+    /* setting background color */
+
+  background-color: var(--oxford-blue);
   }
 
 /* presets and glabal syles for all files */
@@ -22,13 +37,67 @@ html {
 }
 
 h1 {
-  color: var(--main-color);
+ color: var(--header-color) !important;
 }
 
 a {
   text-decoration: none;
 }
 
+
+.hero{
+  position: relative;
+}
+
+.intro{
+  margin-top: 50px;
+  height: 100vh;
+}
+
+.intro-body{
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+
+}
+
+.intro-content{
+  position: relative;
+}
+
+.circle{
+  position: absolute;
+  z-index: -1;
+}
+
+
+
+
+.radial{
+  /* background-color: var(--radial); */
+  /* width: 100px; */
+  background: linear-gradient(338deg, rgba(2,0,36,1) 1%, rgba(9,9,121,1) 21%, rgba(0,212,255,1) 74%);
+  position: absolute;
+  height: 200px;
+  width: 80%;
+  border-radius: 50%;
+  border: 3px solid red;
+  z-index: -1;
+}
+
+.top-left{
+  top: 10px;
+  left: -100px;
+}
+
+.bottom-right{
+  bottom: 10px;
+  right: -100px;
+}
 
 
 
@@ -46,10 +115,6 @@ a {
 /* TODO : sort out later */
 
 /*CSS variables section*/
-:root {
-  /* background-color: rgba(0, 0, 21, 1); */
-  
-}
 
 /*Extra Large screens - Extra large desktops*/
 .header{

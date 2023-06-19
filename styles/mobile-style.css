@@ -5,4 +5,14 @@
 h1 {
     font-size: 8vw;
   }
+
+  .c1{
+    top: -150px;
+    left: -100px;
+  }
+  
+  .c2{
+    bottom: -200px;
+    right: -150px;
+  }
 }

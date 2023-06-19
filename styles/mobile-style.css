@@ -3,16 +3,65 @@
 /* for screens from 0 to 475 width  */
 @media only screen and (max-width: 600px) {
 h1 {
-    font-size: 8vw;
+    font-size: 9vw;
+  }
+
+  .hamburger{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .hamburger-line{
+    height: 2px;
+    width: 30px;
+    background-color: white;
+  }
+  
+  .hamburger:nth-child(1){
+  
+  }
+  
+  .hamburger:nth-child(2){
+  
+  }
+  
+  .hamburger:nth-child(3){
+  
   }
 
   .c1{
-    top: -150px;
-    left: -100px;
+    top: -300%;
+    left: -77%;
+    animation: float 1s linear 0 infinite alternate;
   }
   
   .c2{
-    bottom: -200px;
-    right: -150px;
+    bottom: -300%;
+    right: -73%;
+    animation-name: float;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes float {
+    0%{
+      bottom: -300%;
+      right: -65%;
+    }
+
+    50%{
+      bottom: -270%;
+      right: -60;
+
+    }
+
+    100%{
+      bottom: -300%;
+      right: -65%;
+
+    }
   }
 }

@@ -30,6 +30,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -37,21 +38,34 @@ html {
 }
 
 h1 {
- color: var(--header-color) !important;
+ color: white !important;
 }
 
 a {
   text-decoration: none;
 }
 
-
 .hero{
   position: relative;
 }
 
+header{
+  padding: 10px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  font-size: 20px;
+}
+
 .intro{
-  margin-top: 50px;
   height: 100vh;
+  overflow: hidden;
 }
 
 .intro-body{
@@ -62,7 +76,6 @@ a {
   text-align: center;
   color: white;
   position: relative;
-
 }
 
 .intro-content{
@@ -78,6 +91,7 @@ a {
 
 
 .radial{
+  display: none;
   /* background-color: var(--radial); */
   /* width: 100px; */
   background: linear-gradient(338deg, rgba(2,0,36,1) 1%, rgba(9,9,121,1) 21%, rgba(0,212,255,1) 74%);

@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    font-family: "Lato";
+}
+
 body {
     background-color: black;
     z-index: 5;
+
 }
 
 footer {
@@ -20,11 +25,11 @@ button {
 }
 
 h1 {
-    @apply font-semibold md:font-normal text-center text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl
+    @apply font-semibold md:font-medium text-center text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl
 }
 
 h2 {
-    @apply font-semibold text-4xl md:text-4xl lg:text-6xl xl:text-7xl bg-gradient-to-r from-[#9795FF] via-[#FFFFFF] via-[#FFFFFF] to-[#BE9FFF] text-transparent bg-clip-text
+    @apply font-normal text-4xl md:text-4xl lg:text-6xl xl:text-7xl bg-gradient-to-r from-[#9795FF] via-[#FFFFFF] via-[#FFFFFF] to-[#BE9FFF] text-transparent bg-clip-text
 }
 
 p {

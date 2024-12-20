@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-color: black;
+    z-index: 5;
+}
+
+footer {
+    /* overflow-x: hidden; */
+}
+
+image {
+    z-index: 1;
+}
+
+button {
+    @apply flex items-center gap-3 bg-white rounded-full px-4 py-2 font-medium text-lg hover:scale-105 duration-300
+}
+
+h1 {
+    @apply font-semibold md:font-normal text-center text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl
+}
+
+h2 {
+    @apply font-semibold text-4xl md:text-4xl lg:text-6xl xl:text-7xl bg-gradient-to-r from-[#9795FF] via-[#FFFFFF] via-[#FFFFFF] to-[#BE9FFF] text-transparent bg-clip-text
+}
+
+p {
+    @apply text-base text-white
+}

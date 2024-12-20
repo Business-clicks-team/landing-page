@@ -2,66 +2,247 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./src/output.css">
-  <title>Business clicks</title>
+  <title>Tumzy Tech </title>
+  <script src="index.js" defer></script>
 </head>
 
 <body>
-  <!DOCTYPE html>
-  <html lang="en">
+  <!-- Hero section -->
+  <section style="background-image:url('./assets/images/hero-bg.png')"
+    class="bg-black bg-hero-bg h-screen bg-cover bg-no-repeat bg-center">
+    <header class="flex justify-around items-center p-3">
+      <img src="./assets/images/logo.png" alt="logo">
+      <nav class="hidden md:flex gap-10 text-xl text-white ">
+        <a href="#about" class="hover:font-medium duration-300">Home</a>
+        <a href="#about" class="hover:font-medium duration-300">About us</a>
+        <a href="#about" class="hover:font-medium duration-300">Services</a>
+        <a href="#about" class="hover:font-medium duration-300">Contact</a>
+      </nav>
+    </header>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>The gamer</title>
-    <script src="index.js" defer></script>
-  </head>
+    <div class="flex flex-col gap-10 items-center px-10 lg:px-16 xl:px-20 mt-24">
+      <h1 class="font-medium md:font-normal text-center text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl">We're
+        on a mission
+        to
+        revolutionize the way individuals and businesses harness the power
+        of artificial intelligence.</h1>
 
-  <body>
-    <!-- Hero section -->
-    <section style="background-image:url(./assets/images/hero-bg.png);"
-      class="bg-black bg-hero-bg h-screen bg-cover bg-no-repeat bg-center">
-      <header class="flex justify-around p-3">
-        <img src="" alt="logo">
-        <nav class="hidden md:flex gap-10 text-xl text-white ">
-          <a href="#about" class="hover:font-medium duration-300">Home</a>
-          <a href="#about" class="hover:font-medium duration-300">About us</a>
-          <a href="#about" class="hover:font-medium duration-300">Services</a>
-          <a href="#about" class="hover:font-medium duration-300">Contact</a>
-        </nav>
-      </header>
+      <p class="hidden md:block text-justify text-white text-xl md:text-2xl">We design technology to help individuals
+        and institutions
+        work more
+        efficiently</p>
 
-      <div class="flex flex-col gap-10 items-center px-10 mt-24">
-        <h1 class="font-medium md:font-normal text-center text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl">We're
-          on a mission
-          to
-          revolutionize the way individuals and businesses harness the power
-          of artificial intelligence.</h1>
+      <button>Explore <img src="./assets/images/upArrow.png" alt="up arrow"></button>
+    </div>
+  </section>
+  <!-- Hero section ends -->
 
-        <p class="hidden md:block text-justify text-white text-xl md:text-2xl">We design technology to help individuals
-          and institutions
-          work more
-          efficiently</p>
 
-        <button
-          class="bg-white rounded-full px-6 py-2 font-medium text-lg hover:scale-110 duration-300">Explore</button>
+  <!-- Our products section -->
+  <section class=" overflow-x-hidden md:overflow-x-clip relative py-20 px-5 md:px-10 lg:px-16 xl:px-20 space-y-10">
+    <img src="./assets/images/sideIcon.png" alt="side icon" class="absolute top-2 left-0 z-[1] animate-float">
+    <img src="./assets/images/sideGrade.png" alt="side gradient" class="absolute top-0 -left-[8rem] md:-left-60 z-[1]">
+    <img src="./assets/images/rightSideGrade.png" alt="side gradient"
+      class="absolute top-[46%] md:top-[50%] right-[-4rem] md:-right-0 z-[1]">
+    <div class="flex flex-col items-start gap-10 md:gap-0 md:flex-row justify-between md:items-end">
+      <div class="space-y-3 max-w-lg">
+        <h2 class="">Our Product</h2>
+        <p>help you to build website company that is modern, user friendly, good CEO, and Clean design</p>
       </div>
-    </section>
-    <!-- Hero section ends -->
+
+      <div>
+        <button>All Portfollio <img src="./assets/images/upArrow.png" alt="up arrow"></button>
+      </div>
+    </div>
+
+    <!-- Grid of porfolios -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-10">
+      <!-- portfolio box -->
+      <div class="min-h-[300px] space-y-3 max-w-xl hover:scale-105 duration-300 cursor-pointer z-[5]">
+        <!-- top -->
+        <div
+          class="flex flex-col md:flex-row p-5 gap-6 md:gap-0 rounded-3xl bg-gradient-to-r from-[#E6DBFF] via-[#F6F6F6] to-[#D8D7FF]">
+          <!-- content -->
+          <div class=" space-y-2 flex flex-col items-start">
+            <p class="text-[#0A0C14] rounded-full px-4 py-1 border border-[#504CFF]">Development Project</p>
+            <h4 class="text-3xl text-[#0A0C14] font-medium">AI Market Analysis & Financial Management</h4>
+            <ul class="list-disc pl-5">
+              <li>Automated article & blog post generation</li>
+              <li>Advance summarization algorithm</li>
+              <li>Plagiarism detection & grammar checking </li>
+            </ul>
+          </div>
+          <!-- image -->
+          <img src="./assets/images/aiBot.png" alt="ai bot" class="rounded-2xl md:max-w-[35%]">
+        </div>
+        <!-- bottom -->
+        <div class="space-y-2">
+          <h4 class="text-white text-3xl">AI-Driven Content Creation</h4>
+          <p>This solution automates the creation of articles, blogs & summaries with built-in plagiarism detection
+            and grammar checking for high-quality content.</p>
+        </div>
+      </div>
+      <div class="min-h-[300px] space-y-3 max-w-xl hover:scale-105 duration-300 cursor-pointer z-[5]">
+        <!-- top -->
+        <div
+          class="flex flex-col-reverse md:flex-row gap-6 md:gap-0 p-5 rounded-3xl bg-gradient-to-r from-[#E6DBFF] via-[#F6F6F6] to-[#D8D7FF]">
+          <!-- content -->
+          <div class=" space-y-2 flex flex-col items-start">
+            <p class="text-[#0A0C14] rounded-full px-4 py-1 border border-[#504CFF]">Development Project</p>
+            <h4 class="text-3xl text-[#0A0C14] font-medium">AI Market Analysis & Financial Management</h4>
+            <ul class="list-disc pl-5">
+              <li>Automated article & blog post generation</li>
+              <li>Advance summarization algorithm</li>
+              <li>Plagiarism detection & grammar checking </li>
+            </ul>
+          </div>
+          <!-- image -->
+          <img src="./assets/images/aiBot.png" alt="ai bot" class="rounded-2xl md:max-w-[35%]">
+        </div>
+        <!-- bottom -->
+        <div class="space-y-2">
+          <h4 class="text-white text-3xl">AI-Driven Content Creation</h4>
+          <p>This solution automates the creation of articles, blogs & summaries with built-in plagiarism detection
+            and grammar checking for high-quality content.</p>
+        </div>
+      </div>
+      <div class="min-h-[300px] space-y-3 max-w-xl hover:scale-105 duration-300 cursor-pointer z-[5]">
+        <!-- top -->
+        <div
+          class="flex flex-col-reverse md:flex-row gap-6 md:gap-0 p-5 rounded-3xl bg-gradient-to-r from-[#E6DBFF] via-[#F6F6F6] to-[#D8D7FF]">
+          <!-- content -->
+          <div class=" space-y-2 flex flex-col items-start">
+            <p class="text-[#0A0C14] rounded-full px-4 py-1 border border-[#504CFF]">Development Project</p>
+            <h4 class="text-3xl text-[#0A0C14] font-medium">AI Market Analysis & Financial Management</h4>
+            <ul class="list-disc pl-5">
+              <li>Automated article & blog post generation</li>
+              <li>Advance summarization algorithm</li>
+              <li>Plagiarism detection & grammar checking </li>
+            </ul>
+          </div>
+          <!-- image -->
+          <img src="./assets/images/aiBot.png" alt="ai bot" class="rounded-2xl md:max-w-[35%]">
+        </div>
+        <!-- bottom -->
+        <div class="space-y-2">
+          <h4 class="text-white text-3xl">AI-Driven Content Creation</h4>
+          <p>This solution automates the creation of articles, blogs & summaries with built-in plagiarism detection
+            and grammar checking for high-quality content.</p>
+        </div>
+      </div>
+      <div class="min-h-[300px] space-y-3 max-w-xl hover:scale-105 duration-300 cursor-pointer z-[5]">
+        <!-- top -->
+        <div
+          class="flex flex-col md:flex-row p-5 gap-6 md:gap-0 rounded-3xl bg-gradient-to-r from-[#E6DBFF] via-[#F6F6F6] to-[#D8D7FF]">
+          <!-- content -->
+          <div class=" space-y-2 flex flex-col items-start">
+            <p class="text-[#0A0C14] rounded-full px-4 py-1 border border-[#504CFF]">Development Project</p>
+            <h4 class="text-3xl text-[#0A0C14] font-medium">Business Process Automation</h4>
+            <ul class="list-disc pl-5">
+              <li>Workflow automation to improce efficiency</li>
+              <li>Customized solutions for various business processes</li>
+              <li>Inregration with existing business tools and platforms</li>
+            </ul>
+          </div>
+          <!-- image -->
+          <img src="./assets/images/trading.png" alt="ai bot" class="rounded-2xl md:max-w-[35%]">
+        </div>
+        <!-- bottom -->
+        <div class="space-y-2">
+          <h4 class="text-white text-3xl">AI-Driven Content Creation</h4>
+          <p>This solution automates the creation of articles, blogs & summaries with built-in plagiarism detection
+            and grammar checking for high-quality content.</p>
+        </div>
+      </div>
 
 
-    <section class="bg-gradient-to-br from-[#504CFF99] to-20% to-black h-screen"></section>
-  </body>
 
-  </html>
+
+    </div>
+  </section>
+
+  <!-- Come work with us -->
+  <section
+    class="z-[5] relative flex flex-col items-start gap-10 md:gap-0 md:flex-row md:items-center justify-between py-10 px-5 md:px-10 lg:px-16 xl:px-20">
+    <img src="./assets/images/sideGrade.png" alt="side gradient"
+      class="absolute max-h-[308%] top-[-58%] md:top-[-82%] -left-[8rem] md:-left-60 z-[1]">
+
+    <div class="space-y-4 max-w-xl xl:max-w-2xl z-[5]">
+      <h2>Come work with Us</h2>
+      <p>With good data and the right technology, people and institutions today can still solve hard problems and
+        change the world for the better</p>
+    </div>
+    <div><button type="button" class="w-full max-w-md lg:max-w-lg">Know More <img src="./assets/images/upArrow.png"
+          alt="up arrow"></button></div>
+  </section>
+
+  <footer
+    class="overflow-x-hidden md:overflow-x-[unset] relative flex flex-col gap-10 text-white pt-10 pb-3 px-5 md:px-10 lg:px-16 xl:px-20">
+    <img src="./assets/images/rightSideGrade.png" alt="side gradient"
+      class="absolute top-0 md:top-[50%] right-[-5rem] md:-right-0 z-[1]">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div class="space-y-3 z-[5]">
+        <img src="./assets/images/logo.png" alt="logo">
+        <p class="max-w-56">Companies that can help you in developing your future</p>
+      </div>
+
+      <!-- Products -->
+      <div class="space-y-3">
+        <h3 class="font-medium text-2xl">Products</h3>
+        <ul>
+          <li>AI-Driven Content Creation</li>
+          <li>Graphics Design & Animation</li>
+          <li>AI Market Analysis & Financial Management</li>
+          <li>Business Process Automation</li>
+        </ul>
+      </div>
+
+
+      <div class="space-y-3">
+        <h3 class="font-medium text-2xl">Business Features</h3>
+        <ul>
+          <li>Pojects Writing</li>
+          <li>Sales & Customer Service Smart Agents</li>
+          <li>Business Process Automation</li>
+          <li>Strategic Partnership & Collaboration</li>
+        </ul>
+      </div>
+
+      <div class="space-y-3">
+        <h3 class="font-medium text-2xl">Services</h3>
+        <ul>
+          <li>Project Management</li>
+          <li>UI/UX Designer</li>
+          <li>Branding</li>
+          <li>Copywriting</li>
+        </ul>
+      </div>
+
+    </div>
+    <!-- copyright -->
+    <div class="flex flex-col-reverse md:flex-row gap-3 md:justify-between">
+      <p>© 2024 TumzyTech. All rights reserved.</p>
+
+      <div class="flex flex-col md:flex-row gap-3 md:gap-6">
+        <a>Privacy Policy</a>
+        <a>Terms of Service</a>
+        <a>Cookie Policy</a>
+      </div>
+
+      <!-- <div class="flex flex-wrap gap-6">
+          <p>Privacy Policy</p>
+          <p>Terms of Service</p>
+          <p>Cookie Policy</p>
+        </div> -->
+
+
+
+    </div>
+  </footer>
+
 </body>
 
 </html>
